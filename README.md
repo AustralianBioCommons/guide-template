@@ -1,12 +1,5 @@
 ## About
 
-This template is intended to house material for step-by-step guides and other associated documentation that support the reuse of bioinformatics tools, workflows and data on Australian compute systems and infrastructure.
-
-The template aims to:
-
-- Reduce time spent creating guides by providing a standard structure to develop and maintain guidance material; and,
-- Allow linking to Zenodo, and DOIs for each release
-
 Please see the [How-to Guide for the template]() for more information on how to get started.  
 
 
