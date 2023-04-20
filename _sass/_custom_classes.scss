@@ -10,3 +10,45 @@
         border-radius: $border-radius;
     }
 }
+
+/* see https://github.com/ELIXIR-Belgium/elixir-toolkit-theme*/
+
+.navbar {
+    .navbar-brand {
+        font-size: 2.25rem;
+        color: $dark !important;
+    }
+}
+
+img {
+    @extend .img-fluid;
+}
+
+h2 {
+    padding-top: 10px;
+    display: block;
+    border-top: 1px solid $table-border-color;
+}
+
+/*-----Copied and adapted from https://github.com/elixir-europe/infectious-diseases-toolkit/blob/main/_sass/_custom_classes.scss-----*/
+/*-----Section navigation tiles-----*/
+
+.navigation-tiles {
+    .card:hover {
+        box-shadow: $box-shadow;
+    }
+
+    .card-header {
+        a:hover {
+            text-decoration: none;
+        }
+        h3 {
+            font-size: 1.2rem;
+            background-color: #2cb77c;
+        }
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+

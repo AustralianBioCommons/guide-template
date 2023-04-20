@@ -1,24 +1,16 @@
+# see https://github.com/AustralianBioCommons/human-omics-data-sharing-field-guide/blob/main/_data/footer.yml
 copyright: Copyright notice
-extra_line: 
+extra_line:
 columns:
   - type: image
-    image_width: 88px
-    width: 2
-    src: 'assets/img/main_logo.svg'
-    alt: Jekyll Bootstrap theme logo
+    image_width: 120px
+    width: 3
+    src: 'assets/img/main_logo.png'
+    alt: Australian BioCommons Logo
   - type: links
     width: 3
-    children: 
+    children:
       - url_text: Home
         url: /
-  - type: links
-    width: 3
-    children: 
-      - url_text: Example page
-        url: /example_page
-  - type: image
-    image_width: 88px
-    width: 2
-    src: 'assets/img/main_logo.svg'
-    alt: Jekyll Bootstrap theme logo
-
+      - url_text: Contributors
+        url: /contributors
