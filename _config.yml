@@ -7,13 +7,13 @@ title: How-to Guide
 description: "A bioinformatics focused How-to Guide"
 # Metadata description of the website
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@1.25.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@1.26.0
 
 theme_variables:
   # biocommons blue
   theme_color: 205a86
   topnav:
-    brand_logo: assets/img/main_logo.png
+    brand_logo: assets/img/logo_example.png
 
 exclude:
   - README.md
