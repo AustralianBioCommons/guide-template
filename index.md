@@ -26,8 +26,9 @@ affiliations:
 
 > Don't delete anything from this section, only add.
 
-This guide makes use of the ELIXIR toolkit theme: [![theme badge](https://img.shields.io/badge/ELIXIR%20toolkit%20theme-jekyll-blue?color=0d6efd)](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme)
+This guide makes use of the [ELIXIR toolkit theme](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme)
 
+![](./assets/img/elixir-toolkit-theme_logo.svg)
 
 ## References
 
