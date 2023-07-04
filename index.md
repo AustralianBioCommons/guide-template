@@ -28,7 +28,7 @@ affiliations:
 
 This guide makes use of the [ELIXIR toolkit theme](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme)
 
-![](./assets/img/elixir-toolkit-theme_logo.svg)
+{% include image.html file="elixir-toolkit-theme_logo.svg" alt="Elixir Toolkit Theme logo" max-width="15em" %}
 
 ## References
 
