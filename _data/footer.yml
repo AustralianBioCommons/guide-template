@@ -1,6 +1,6 @@
 # see https://github.com/AustralianBioCommons/human-omics-data-sharing-field-guide/blob/main/_data/footer.yml
 copyright: Copyright notice
-extra_line:
+extra_line: Add other relevant information here!
 columns:
   - type: links
     width: 3

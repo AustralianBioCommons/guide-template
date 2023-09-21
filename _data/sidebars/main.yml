@@ -1,8 +1,14 @@
 subitems:
-  - title: Home
+  - title: About
     url: /index
-  - title: Example page
+  - title: Standard example page
     url: /example_page
+  - title: Workflow How-to Guide example pages
+    subitems:
+      - title: Example workflow guide page
+        url: /example_bioinformatics_workflow_page
+      - title: Example workflow documentation page
+        url: /example_workflow_documentation_page
   - title: Contributors
     url: /contributors
   
