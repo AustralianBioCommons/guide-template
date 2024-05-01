@@ -7,7 +7,6 @@ affiliations:
 sidebar: false
 ---
 
----
 
 **Replace this section with your guide content!**
 
@@ -18,5 +17,3 @@ Example templates that you could use for different guides are available in this 
 - [Suggested structure for documentation describing a workflow: based on Australian BioCommons documentation guidelines](./pages/example_workflow_documentation_page.md)
 
 Use cases for different guides are described in the [How-to Guide for using this template](https://australianbiocommons.github.io/how-to-guide-template/how_to_guide_types).
-
----
