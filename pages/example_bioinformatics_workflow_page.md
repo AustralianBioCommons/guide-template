@@ -4,6 +4,7 @@ type: template
 contributors: 
 description: Add a plain text description here.
 affiliations: 
+sidebar: false
 ---
 
 > The headings and instructions here are based on the first set of How-to Guides created, which can be viewed here: https://australianbiocommons.github.io/how-to-guides/

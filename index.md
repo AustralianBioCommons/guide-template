@@ -8,7 +8,7 @@ sidebar: false
 ---
 
 
-**Replace this section with your guide content!**
+**Replace the text below with your guide content!**
 
 Example templates that you could use for different guides are available in this repository:
 

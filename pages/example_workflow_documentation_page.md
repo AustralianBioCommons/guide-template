@@ -4,6 +4,7 @@ type: template
 contributors: 
 description: Add a plain text description here.
 affiliations: 
+sidebar: false
 ---
 
 
