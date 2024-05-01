@@ -7,7 +7,7 @@ title: How-to Guide
 description: "A bioinformatics focused How-to Guide"
 # Metadata description of the website
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@3.0.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@2.5.0
 
 theme_variables:
   # biocommons blue
