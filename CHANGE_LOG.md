@@ -9,7 +9,14 @@ To start writing a change log for your own How-to Guide, copy the structure belo
 Details of the changes made since the last version
 ```
 
-# Guide template change log
+# How-to Guide template change log
+
+## v1.2
+
+- Move to ETT version 3.0.0
+- Change structure to include guide and about tabs, and default to a single page guide with no nav bar on the left
+- Update main logo & top nav bar
+- Add BioCommons favicons as default
 
 ## v1.1
 
