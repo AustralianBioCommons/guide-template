@@ -1,33 +1,39 @@
-# Australian BioCommons How-to Guide Template
+# Australian BioCommons Service Documentation Template
 
-This repository is a GitHub template for creating bioinformatics How-to Guide websites. It is maintained by Australian BioCommons and used by researchers, bioinformaticians, and service providers across Australian national compute infrastructure (Galaxy Australia, NCI Gadi, Pawsey Setonix).
+This is a template that includes standards and conventions for creating, and maintaining, documentation for Australian BioCommons services. Documentation is deployed as a GitHub Pages site using the ELIXIR Toolkit theme.
 
-Guides are deployed as GitHub Pages sites using the ELIXIR Toolkit theme.
+This repository contains the GitHub template markdown files and configuration instructions required to set up one of these sites.
+
+These sites are maintained by Australian BioCommons and used by researchers, bioinformaticians, and service providers across Australian national compute infrastructure (Galaxy Australia, NCI Gadi, Pawsey Setonix).
 
 ## Purpose
 
-The template provides a standard structure for documenting bioinformatics tools, workflows, and their use on Australian HPC and cloud infrastructure. The goal is to:
+The template provides a standard structure for documenting a service, which could also include specific bioinformatics software tools and workflows and their use on Australian HPC and cloud infrastructure.
 
-- Reduce the time researchers spend creating documentation
-- Ensure guides follow a consistent, reusable structure
+The goal of the template is to:
+
+- Reduce the time that is required to create documentation
+- Ensure the documentation across services follows a consistent and reusable structure
 - Enable DOI minting via Zenodo for citable research outputs
 - Support linking to registries: WorkflowHub, bio.tools, TeSS (ELIXIR training)
 
-## Repository structure
+
+## Default repository structure
 
 | Path | Purpose |
 |------|---------|
-| `index.md` | Main landing page / single-page guide content |
-| `about.md` | Citation, acknowledgements, references |
-| `pages/` | Additional content pages for multi-page guides |
-| `images/` | Screenshots and figures used in the guide |
+| `index.md` | Main service landing page |
+| `about.md` | Service description, citation, acknowledgements, references |
+| `pages/` | Additional content pages, including getting started, terms of use, usage guides, and FAQs |
+| `images/` | Screenshots and figures used in the documentation |
 | `_data/sidebars/main.yml` | Navigation sidebar configuration |
 | `_data/affiliations.yml` | Institutional affiliations metadata |
 | `_data/CONTRIBUTORS.yml` | List of contributors with ORCID and GitHub handles |
 | `_config.yml` | Jekyll configuration: title, remote theme, metadata |
 | `CITATION.CFF` | Citation metadata in Citation File Format |
-| `contributors.md` | Auto-generated contributors page |
+| `contributors.md` | Contributors page that auto-generates a contributor list |
 | `README.md` | GitHub repository description |
+
 
 ## Guide content conventions
 
@@ -40,7 +46,13 @@ description: <One sentence description used in meta tags>
 ---
 ```
 
-### Standard page sections (in order)
+
+### Standard pages and page sections (in order)
+
+Template pages are available in this repository in the /pages directory, with the prefix "example_service_page_".
+
+
+#### Main landing page - index.md
 
 1. **Introduction**: 1–3 paragraphs describing what the guide covers, what tool/workflow/platform it documents, and which infrastructure it targets. Mention any relevant BioCommons or Bioplatforms Australia programmes (e.g. Threatened Species Initiative).
 
@@ -57,6 +69,7 @@ description: <One sentence description used in meta tags>
 
 7. **References**: Numbered or linked references to tools, papers, and databases.
 
+
 ### Writing style
 
 - Use second person ("you", "your") throughout
@@ -67,17 +80,22 @@ description: <One sentence description used in meta tags>
 - Workflow names are bolded on first mention
 - Links to Galaxy Australia, NCI, Pawsey, Bioplatforms data portal, WorkflowHub, TeSS, and bio.tools registries should be included wherever relevant
 
+
 ### Callout syntax
 
+There are 4 callout types available:
+
+- **Note:** Use this for supplementary information the user should be aware of.
+- **Warning:** Use this for important caveats that could cause errors or data loss.
+- **Tip:** Use this for shortcuts, FAQs, or helpful context.
+- **Important:** Use this for prerequisite or dependency information.
+
+They should be included in the documentation using the following markdown:
+
 ```markdown
-> **Note:** Use this for supplementary information the user should be aware of.
-
-> **Warning:** Use this for important caveats that could cause errors or data loss.
-
-> **Tip:** Use this for shortcuts, FAQs, or helpful context.
-
-> **Important:** Use this for prerequisite or dependency information.
+{% include callout.html type="[add type here]" content="[Add content here]" %}
 ```
+
 
 ### Figure syntax
 
@@ -87,9 +105,11 @@ description: <One sentence description used in meta tags>
 *Fig N. Caption describing what the screenshot shows and why it is relevant.*
 ```
 
+
 ### Tables
 
 Use markdown tables for: process summaries, file/directory listings, input/output descriptions, and tool comparisons.
+
 
 ## Infrastructure platforms commonly documented
 
@@ -99,35 +119,6 @@ Use markdown tables for: process summaries, file/directory listings, input/outpu
 - **Australian Nextflow Seqera Service**: managed Nextflow Tower for workflow orchestration
 - **Bioplatforms Australia Data Portal**: genomics data repository with time-limited download URLs
 
-## Existing guide categories and examples
-
-### Genome assembly
-- HiFi genome assembly with `hifiasm` on Galaxy Australia
-- Genome scaffolding with Hi-C on Galaxy Australia
-- Assessing genome assembly quality (BUSCO, Merqury)
-
-### Genome annotation
-- Genome annotation with FgenesH++
-- Transcriptome alignment
-
-### Metagenomics
-- Shotgun metagenomics with MetaPhlAn2 and HUMAnN2 on Galaxy Australia
-- ONTViSc pipeline on HPC using Australian Nextflow Seqera Service
-
-### Transcriptomics
-- scRNA-seq workflows (Scanpy-based) on Galaxy Australia
-- Spatial transcriptomics how-tos (in-situ single-cell spatial RNA)
-
-### Population genomics
-- Stacks RADseq workflows on Galaxy Australia
-
-### Structural biology
-- AlphaFold2 structure prediction on HPC
-- Best practices for presenting AlphaFold models in publications
-
-### Documentation
-- How-to create a How-to Guide (meta-guide)
-- Australian BioCommons documentation guidelines
 
 ## Registries and external resources to link
 
@@ -137,6 +128,7 @@ Use markdown tables for: process summaries, file/directory listings, input/outpu
 | bio.tools | bio.tools | Link tool entries for any software mentioned |
 | TeSS | tess.elixir-europe.org | Link training materials for topics covered |
 | Zenodo | zenodo.org | DOI minting for guide releases via GitHub integration |
+
 
 ## Contributor metadata format
 
@@ -148,20 +140,41 @@ Use markdown tables for: process summaries, file/directory listings, input/outpu
   affiliation: University of Sydney
 ```
 
-`_data/affiliations.yml` maps short institution keys to full names and logos used in the contributors page.
+`_data/affiliations.yml` maps short institution keys to full names and logos used on the contributors page.
+
 
 ## Deployment
 
-Guides are deployed via GitHub Pages using a remote ELIXIR Toolkit Jekyll theme defined in `_config.yml`:
+Service documentation is deployed via GitHub Pages using a remote ELIXIR Toolkit Jekyll theme defined in `_config.yml`:
 ```yaml
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@<version>
 ```
 
-The top navigation bar is configured in `_config.yml`. The left sidebar is configured in `_data/sidebars/main.yml` for multi-page guides.
+The top navigation bar is configured in `_data/topnav.yml`.
+The left sidebar is configured in `_data/sidebars/main.yml`.
+
+The default service `main.yml` looks like this:
+
+```yaml
+subitems:
+  - title: Usage guide
+    url: /usage-guide
+  - title: Events and news
+    url: /events-news.md
+  - title: Help and contact details
+    url: /contact
+  - title: FAQ
+    url: /faq
+  - title: About
+    url: /about
+  - title: Contributors
+    url: /contributors
+```
+
 
 ## AI assistant guidance for documentation authors
 
-When helping a developer write or extend a guide in this template, you should:
+When helping a developer write or extend service documentation using this template, you should:
 
 1. **Ask for the tool/workflow name and target platform** before generating content. The platform (Galaxy Australia vs HPC vs Seqera) determines the structure and required screenshots.
 
@@ -185,7 +198,8 @@ When helping a developer write or extend a guide in this template, you should:
 
 9. **Write directly in markdown** — do not suggest or produce content in Google Docs, Word, or any other word processor format. All guide content should be authored as `.md` files from the start. Conversion from word processors introduces formatting errors and requires an extra manual step. If an author shares content in a non-markdown format, help them convert it cleanly before proceeding.
 
-### Closing checklist
+
+## Closing checklist
 
 At the end of any guide-writing session, run the following review and flag anything missing or incomplete before the author considers the guide done:
 
